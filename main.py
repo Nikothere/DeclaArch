@@ -20,7 +20,7 @@ if bootformreq == "yes":
 print("formating the root partion to ext4...")
 os.system(f"mkfs.ext4 {rootpart}")
 
-
+print("Congratulations! The disk setup is complete)")
 
 
 
