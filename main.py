@@ -17,7 +17,9 @@ bootformreq = input("Do you want to format the boot partition? (bootloader of ot
 if bootformreq == "yes":
    os.system(f"mkfs.fat -F32 -n EFI {bootpart}")
 
+print("formating the root partion to ext4...")
 os.system(f"mkfs.ext4 {rootpart}")
+
 
 
 
