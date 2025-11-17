@@ -9,6 +9,7 @@ swapquest = input("Do you want to use swap partition? (yes\no): ")
 if swapquest == "yes":
    swappart = input("chose the swap partition: ")
    os.system(f"mkswap {swappart}")
+   os.system(f"swapon {swappart}")
 
 
 
